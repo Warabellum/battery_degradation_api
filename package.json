@@ -1,0 +1,49 @@
+{
+  "name": "battery-degradation-api",
+  "version": "2.0.0",
+  "description": "Advanced API to estimate battery health and degradation trends with temperature and DoD modeling",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "eslint .",
+    "test": "node --test test/*.js",
+    "test:watch": "nodemon --exec \"npm test\"",
+    "validate": "npm run lint && npm test"
+  },
+  "keywords": [
+    "battery",
+    "ev",
+    "degradation",
+    "api",
+    "health",
+    "cyclic",
+    "temperature",
+    "depth-of-discharge",
+    "lithium-ion",
+    "soh",
+    "remaining-useful-life"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/battery-degradation-api.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "eslint": "^9.8.0",
+    "nodemon": "^3.1.4"
+  }
+}
