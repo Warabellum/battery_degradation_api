@@ -26,7 +26,7 @@ export class BatteryService {
       const result = {
         meta: {
           unitCapacity: input.unit || "Ah",
-          modelVersion: "v2.0-calibrated",
+          modelVersion: "v1.0-calibrated",
           generatedAt: new Date().toISOString(),
           assumptions: {
             tempAccelerationAbove30C: 1.5,
