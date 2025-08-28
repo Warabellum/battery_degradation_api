@@ -122,7 +122,6 @@ app.get('/', (req, res) => {
         description: 'API status and system information'
       }
     },
-    documentation: 'https://rapidapi.com/your-username/api/battery-degradation-analysis'
   });
 });
 
@@ -159,8 +158,7 @@ app.listen(PORT, () => {
   });
 
   // Show startup message
-  console.log('\n🔋 Battery Degradation API v2.0');
-  console.log(`📡 Server running on http://localhost:${PORT}`);
+  console.log('\n🔋 Battery Degradation API v1.0');
   console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`⚡ RapidAPI Ready: ${process.env.NODE_ENV === 'production' ? 'YES' : 'NO (dev mode)'}`);
   console.log('\n📚 Available endpoints:');
