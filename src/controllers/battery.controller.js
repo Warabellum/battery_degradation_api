@@ -71,7 +71,7 @@ export class BatteryController {
     res.status(200).json({
       success: true,
       message: 'Battery Degradation API is running',
-      version: '2.0.0',
+      version: '1.0.0',
       endpoints: {
         analyze: 'POST /api/battery/analyze - Full battery analysis',
         health: 'POST /api/battery/health - Health summary only',
